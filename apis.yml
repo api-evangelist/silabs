@@ -1,9 +1,29 @@
 aid: silabs
-name: Silabs
-description: 'Silabs is a company surfaced as a portfolio company of norwest-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead awaiting
-  the enrichment pipeline.'
+name: Silicon Labs
+description: 'Silicon Labs (Silabs) is a fabless semiconductor company headquartered
+  in Austin, Texas that designs silicon, software, and solutions for a more connected,
+  IoT world. Its portfolio includes wireless connectivity SoCs and modules for Bluetooth,
+  Bluetooth Mesh, Zigbee, Thread, Matter, Z-Wave, Wi-Fi, and proprietary sub-GHz protocols,
+  along with 32-bit microcontrollers, sensors, and timing devices. Developers build
+  on Silicon Labs hardware using the Simplicity Studio IDE, the Simplicity SDK (formerly
+  Gecko SDK), the docs.silabs.com developer documentation, and the Silicon Labs Community.
+  Silicon Labs is a hardware and embedded-software provider rather than a web-API vendor:
+  its public developer surface is embedded C/C++ SDKs, tools, and reference examples
+  on GitHub (github.com/SiliconLabs), not a hosted REST API — so this profile carries
+  identity, developer-portal, and security signals rather than API specifications.'
 url: https://raw.githubusercontent.com/api-evangelist/silabs/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.silabs.com/content/dam/siliconlabs/images/social-thumbnails/homepage-thumbnail.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,10 +32,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-- Unknown
+- Semiconductors
+- Internet of Things
+- Wireless
+- Microcontrollers
+- Bluetooth
+- Zigbee
+- Matter
+- Embedded
+- Developer Tools
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,4 +52,29 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://silabs.com
+  url: https://www.silabs.com
+- type: DeveloperPortal
+  url: https://docs.silabs.com/
+- type: Documentation
+  url: https://docs.silabs.com/
+- type: Support
+  url: https://community.silabs.com/s/support-home
+- type: Blog
+  url: https://www.silabs.com/blog
+- type: GitHubOrganization
+  url: https://github.com/SiliconLabs
+- type: TermsOfService
+  url: https://www.silabs.com/about-us/legal/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.silabs.com/about-us/legal/privacy-notice
+- type: Security
+  url: https://www.silabs.com/security
+- type: VulnerabilityDisclosure
+  url: security/silabs-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/silabs-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 2
+  pass: local-v1
