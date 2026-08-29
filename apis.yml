@@ -12,6 +12,17 @@ description: 'Silicon Labs (Silabs) is a fabless semiconductor company headquart
   on GitHub (github.com/SiliconLabs), not a hosted REST API — so this profile carries
   identity, developer-portal, and security signals rather than API specifications.'
 url: https://raw.githubusercontent.com/api-evangelist/silabs/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
