@@ -1,0 +1,32 @@
+# Front Door AI Index — silabs — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: silabs
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.silabs.com
+  final_host: www.silabs.com
+  ownership: own
+  owner: silabs
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 13
+  host_score: 13
+  density: 12.04
+  words: 1080
+  tiers:
+    agentic: 0
+    core: 13
+    model: 0
+  ambiguous: 21
+  top_terms:
+    smart: 17
+    AI: 6
+    ML: 3
+    machine learning: 3
+    automation: 2
+    artificial intelligence: 1
+    intelligence: 1
+    predictive: 1
