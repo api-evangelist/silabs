@@ -1,0 +1,52 @@
+edges:
+- partner_name: Connectivity Standards Alliance (Matter)
+  partner: null
+  type: contract
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://on.dcl.csa-iot.org/dcl/vendorinfo/vendors/4169
+  category: Matter certified products
+  contract_reference:
+    register: CSA Distributed Compliance Ledger (Matter certification)
+    spec_file: null
+    standard: Matter
+    role: Matter certified vendor
+    vendor_id: 4169
+    registered_name: Silicon Labs
+    legal_name: 'Silicon Laboratories Inc NASDAQ: SLAB'
+    landing_page: https://www.silabs.com/
+    identity_source: vendorLandingPageURL
+    matched_domain: silabs.com
+    matched_by: domain+verified
+    certified_models: 2
+    certified_products:
+    - product: On/Off Light
+      device_type_id: 256
+      models: 1
+      revoked_models: 0
+      latest_certification: '2023-02-01'
+      transports:
+      - bluetooth
+      - thread
+      examples:
+      - EFR32MG24X
+      lapsed: false
+    - product: Dimmable Light
+      device_type_id: 257
+      models: 1
+      revoked_models: 0
+      latest_certification: '2023-05-10'
+      transports:
+      - bluetooth
+      - wi-fi
+      examples:
+      - RS9116 Wi-Fi NCP SoCs
+      lapsed: false
+    signal_note: certified_products = one entry per device type (diversity), not per model
+    detected_by: sweep-iot.py
+    detected: '2026-10-14'
+generated: '2026-10-14'
+method: searched
+checked:
+- https://on.dcl.csa-iot.org/dcl/vendorinfo/vendors
