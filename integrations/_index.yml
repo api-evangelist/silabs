@@ -53,3 +53,26 @@
     detected: '2026-10-14'
   status: not-a-workflow
   arazzo: null
+- slug: silabs-knx-association-manufacturer-members
+  label: KNX Association (manufacturer members)
+  partner_name: KNX Association (manufacturer members)
+  category: building automation
+  type: register
+  channel: standard-directory
+  evidence: https://www.knx.org/community/manufacturers
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: KNX Association manufacturer members (knx.org/community/manufacturers)
+    spec_file: null
+    standard: KNX (ISO/IEC 14543-3)
+    role: knx-manufacturer-member
+    registered_name: Silicon Labs
+    website: https://www.silabs.com
+    matched_domain: silabs.com
+    matched_by: domain+verified
+    signal_note: 'participation only: membership is not a product certification'
+    detected_by: sweep-building-automation.py
+    detected: '2026-10-15'
+  status: not-a-workflow
+  arazzo: null
