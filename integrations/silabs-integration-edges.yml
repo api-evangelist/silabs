@@ -1,4 +1,27 @@
 edges:
+- partner_name: KNX Association (manufacturer members)
+  partner: null
+  partner_match: register
+  type: register
+  direction: partner-built
+  evidence: https://www.knx.org/community/manufacturers
+  category: building automation
+  channel: standard-directory
+  relationship: standard-participant
+  contract_reference:
+    register: KNX Association manufacturer members (knx.org/community/manufacturers)
+    spec_file: null
+    standard: KNX (ISO/IEC 14543-3)
+    role: knx-manufacturer-member
+    registered_name: Silicon Labs
+    website: https://www.silabs.com
+    matched_domain: silabs.com
+    matched_by: domain+verified
+    signal_note: 'participation only: membership is not a product certification'
+    detected_by: sweep-building-automation.py
+    detected: '2026-10-19'
+  detected_by: sweep-building-automation.py
+  first_seen: '2026-10-15'
 - partner_name: Connectivity Standards Alliance (Matter)
   partner: null
   type: contract
@@ -19,7 +42,7 @@ edges:
     identity_source: vendorLandingPageURL
     matched_domain: silabs.com
     matched_by: domain+verified
-    certified_models: 2
+    certified_models: 3
     certified_products:
     - product: On/Off Light
       device_type_id: 256
@@ -43,32 +66,19 @@ edges:
       examples:
       - RS9116 Wi-Fi NCP SoCs
       lapsed: false
+    - product: unspecified device type
+      device_type_id: null
+      models: 1
+      revoked_models: 0
+      latest_certification: '2024-07-29'
+      transports:
+      - bluetooth
+      - wi-fi
+      examples: null
+      lapsed: false
     signal_note: certified_products = one entry per device type (diversity), not per model
     detected_by: sweep-iot.py
-    detected: '2026-10-14'
-- partner_name: KNX Association (manufacturer members)
-  partner: null
-  partner_match: register
-  type: register
-  direction: partner-built
-  evidence: https://www.knx.org/community/manufacturers
-  category: building automation
-  channel: standard-directory
-  relationship: standard-participant
-  contract_reference:
-    register: KNX Association manufacturer members (knx.org/community/manufacturers)
-    spec_file: null
-    standard: KNX (ISO/IEC 14543-3)
-    role: knx-manufacturer-member
-    registered_name: Silicon Labs
-    website: https://www.silabs.com
-    matched_domain: silabs.com
-    matched_by: domain+verified
-    signal_note: 'participation only: membership is not a product certification'
-    detected_by: sweep-building-automation.py
-    detected: '2026-10-15'
-  detected_by: sweep-building-automation.py
-  first_seen: '2026-10-15'
+    detected: '2026-10-19'
 - partner_name: MLCommons MLPerf
   partner: mlcommons
   partner_match: register
@@ -102,9 +112,27 @@ edges:
       result, lapsed outside the current window; open-division families, rounds and result counts are context, never
       read
     detected_by: sweep-mlops.py
-    detected: '2026-10-15'
+    detected: '2026-10-19'
   detected_by: sweep-mlops.py
   first_seen: '2026-10-15'
+- partner_name: Visual Studio Code Marketplace
+  partner: vs-code-marketplace
+  partner_match: aggregator
+  type: marketplace
+  marketplace: vscode
+  channel: partner-built
+  relationship: platform-app
+  direction: third-party
+  evidence: https://marketplace.visualstudio.com/publishers/SiLabs
+  listing_count: 1
+  apps:
+  - Simplicity Studio for VS Code
+  publisher_name: Silicon Labs
+  badges:
+  - Verified publisher
+  - Verified domain
+  detected_by: sweep-devtools.py
+  detected: '2026-10-19'
 generated: '2026-10-14'
 method: searched
 checked:
@@ -113,9 +141,11 @@ checked:
 - https://github.com/lfai/landscape
 - https://github.com/mlcommons
 - https://marketing.project-haystack.org/about-us
+- https://marketplace.visualstudio.com/vscode
 - https://on.dcl.csa-iot.org/dcl/vendorinfo/vendors
 - https://www.bacnetinternational.net/btl/
 - https://www.knx.org/community/manufacturers
 source:
 - https://github.com/lfai/landscape
 - https://github.com/mlcommons
+marketplace_apps: []
