@@ -133,6 +133,43 @@ edges:
   - Verified domain
   detected_by: sweep-devtools.py
   detected: '2026-10-19'
+- partner_name: CVE Program (CVE Numbering Authorities)
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.cve.org/PartnerInformation/ListofPartners/partner/Silabs
+  category: Vulnerability disclosure (CVE Numbering Authority)
+  contract_reference:
+    register: CVE Program CNA list (github.com/CVEProject/cve-website CNAsList.json @ 239d3d9b68e0)
+    standard: CVE Program CNA Operational Rules (CVE Numbering Authority)
+    spec_file: null
+    role: cve-numbering-authority
+    registered_name: Silicon Labs
+    matched_domain: silabs.com
+    matched_by: domain+verified
+    cna_id: CNA-2021-0056
+    cna_short_name: Silabs
+    cna_types:
+    - Vendor
+    cna_roles:
+    - CNA
+    scope: Silicon Labs issues only.
+    top_level_root: MITRE Corporation
+    root: n/a
+    security_advisories:
+    - https://community.silabs.com/s/alert/Alert__c/00B1M000009sQ4R
+    disclosure_policy:
+    - https://www.silabs.com/security/security-vulnerability-disclosure-policy
+    country: USA
+    signal_note: listing as a CVE Numbering Authority = participation (a public commitment to assign CVE IDs and
+      publish advisories for its scope); never a count of CVEs
+    detected_by: sweep-vulnerability-disclosure-cna.py
+    detected: '2026-10-22'
+  detected_by: sweep-vulnerability-disclosure-cna.py
+  first_seen: '2026-10-22'
 generated: '2026-10-14'
 method: searched
 checked:
@@ -145,6 +182,9 @@ checked:
 - https://on.dcl.csa-iot.org/dcl/vendorinfo/vendors
 - https://www.bacnetinternational.net/btl/
 - https://www.knx.org/community/manufacturers
+- https://api.first.org/data/v1/teams
+- https://raw.githubusercontent.com/CVEProject/cve-website/dev/src/assets/data/CNAsList.json
+- https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
 source:
 - https://github.com/lfai/landscape
 - https://github.com/mlcommons
